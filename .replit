@@ -1,2 +1,3 @@
 language = "python3"
 run = "python main.py" 
+onBoot = "poetry install"
