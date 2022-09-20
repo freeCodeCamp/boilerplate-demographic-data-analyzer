@@ -2,7 +2,8 @@ import unittest
 import demographic_data_analyzer
 
 class DemographicAnalyzerTestCase(unittest.TestCase):
-    def setUp(self):
+    @classmethod
+    def setUpClass(self):
         self.data = demographic_data_analyzer.calculate_demographic_data(print_data = False)
 
     def test_race_count(self):
