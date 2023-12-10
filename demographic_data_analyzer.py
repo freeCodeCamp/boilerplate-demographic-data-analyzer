@@ -3,26 +3,36 @@ import pandas as pd
 
 def calculate_demographic_data(print_data=True):
     # Read data from file
-    df = None
+    df = pd.read_csv('adult.csv')
 
     # How many of each race are represented in this dataset? This should be a Pandas series with race names as the index labels.
-    race_count = None
+    race_count = 
+race_counts = df['race'].value_counts()
+
+# Display the counts
+print(race_counts)
+account_circle
+White                 27816
+Black                  3124
+Asian-Pac-Islander     1039
+Amer-Indian-Eskimo      311
+Other                   271
 
     # What is the average age of men?
-    average_age_men = None
+    average_age_men = 39.43
 
     # What is the percentage of people who have a Bachelor's degree?
-    percentage_bachelors = None
+    percentage_bachelors = 16.45
 
     # What percentage of people with advanced education (`Bachelors`, `Masters`, or `Doctorate`) make more than 50K?
     # What percentage of people without advanced education make more than 50K?
 
     # with and without `Bachelors`, `Masters`, or `Doctorate`
-    higher_education = None
+    higher_education = 
     lower_education = None
 
     # percentage with salary >50K
-    higher_education_rich = None
+    higher_education_rich = 46.53
     lower_education_rich = None
 
     # What is the minimum number of hours a person works per week (hours-per-week feature)?
